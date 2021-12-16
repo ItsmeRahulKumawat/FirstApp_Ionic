@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Rajasthan</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/images/jaipur.jpg" alt="images" style="border-radius: 10px;">
+      <ion-card-title  style="color:maroon"><b>Jaipur Plan</b></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color. 
+      <br><br>
+      <b>Facilities:</b>
+      <ul>
+        <li>4 Star Hotel</li>
+        <li>Free wifi</li>
+        <li>Travelling Included</li>
+        <li>Gift Hamper for you</li>
+      </ul>
+      <ion-button (click)="jaipur()" expand="block" shape="round" fill="outline">
+        Rs <strike>22000 </strike>/- 12000/-
+        &nbsp;
+        <ion-icon name="wallet-outline"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

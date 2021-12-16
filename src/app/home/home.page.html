@@ -1,20 +1,53 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      WeYOu
+      <br>
+      Tourism
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <img src="assets/images/login.png" alt="image">
+  <div padding>
+    <ion-item>
+      <ion-input  name="name" type="text" align="center" placeholder="Name" ngModel required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input name="email" type="email" align="center" placeholder="your@email.com" ngModel required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input name="password" type="password" align="center" placeholder="Password" ngModel required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input name="confirm" type="password" align="center" placeholder="Password again" ngModel required></ion-input>
+    </ion-item>
   </div>
+  <div padding>
+    <ion-button  size="large" align="center" type="submit" (click)="login()" expand="block">Register</ion-button>
+  </div>
+
+  <ion-fab horizontal="start" vertical="bottom" slot="fixed">
+    <ion-fab-button color="dark">
+      <ion-icon md="caret-up" ios="chevron-up-circle-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+
+      <a href="https://www.facebook.com/TourismIndiaMagazine/"><ion-fab-button color="light">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button></a>
+      <a href="https://twitter.com/?logout=1637044622046">
+      <ion-fab-button color="light">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+    </a>
+    <ion-anchor href="https://www.instagram.com/incredibleindia/?hl=en">
+      <ion-fab-button color="light">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+    </ion-anchor>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>
+
